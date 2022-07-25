@@ -7,7 +7,7 @@ services:
 
 before_install:
   - echo "Testing Docker Hub credentials"
-  - echo '$DOCKER_PASSWORD' | docker login -u 'gisthive' --password-stdin
+  - echo C?7M?p-Gg^.9#h_ | docker login -u gisthive --password-stdin
   - echo "Docker Hub credentials are working"
 
 script:
