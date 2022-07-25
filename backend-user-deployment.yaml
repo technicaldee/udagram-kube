@@ -15,7 +15,7 @@ spec:
         app: udagram-api-user
     spec:
       containers:
-      - image: gisthive/udagram-api-user
+      - image: gisthive/udagram-api-user:v1
         name: udagram-api-user
         imagePullPolicy: Always  
         resources:

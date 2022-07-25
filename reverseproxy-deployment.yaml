@@ -18,6 +18,8 @@ spec:
       - image: gisthive/udagram-reverseproxy
         name: udagram-reverseproxy
         imagePullPolicy: Always  
+        ports:
+        - containerPort: 5000
         resources:
           requests:
             memory: "64Mi"

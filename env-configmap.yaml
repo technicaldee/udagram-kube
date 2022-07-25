@@ -1,9 +1,18 @@
-# This file is used for convenience of local development.
-# DO NOT STORE YOUR CREDENTIALS INTO GIT
-POSTGRES_HOST: database-1.ct8kkppwcgjx.us-east-1.rds.amazonaws.com
-POSTGRES_DB: postgres
-AWS_BUCKET: arn:aws:s3:::bucket-12106698547
-AWS_REGION: us-east-1
-AWS_PROFILE: default
-JWT_SECRET: testing
-URL: http://localhost:8100
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config # Name of the secret
+  namespace: default # Namespace of the secret
+data:
+  POSTGRES_HOST: database-1.ct8kkppwcgjx.us-east-1.rds.amazonaws.com
+  POSTGRESS_HOST: database-1.ct8kkppwcgjx.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  POSTGRESS_DB: postgres
+  POSTGRESS_USERNAME: postgres
+  POSTGRESS_PASSWORD: Test1234
+  AWS_BUCKET: arn:aws:s3:::bucket-12106698547
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  JWT_SECRET: testing
+  URL: http://localhost:8100
+

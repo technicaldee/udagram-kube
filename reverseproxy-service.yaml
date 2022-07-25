@@ -4,8 +4,7 @@ metadata:
   name: udagram-reverseproxy
 spec:
   ports:
-    name: "5000"
-    port: 5000
+  - port: 5000
     targetPort: 5000
   selector:
     app: udagram-reverseproxy

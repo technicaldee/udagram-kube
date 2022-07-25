@@ -15,9 +15,11 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - image: gisthive/udagram-frontend
+      - image: gisthive/udagram-frontend:v2
         name: udagram-frontend
         imagePullPolicy: Always  
+        ports:
+        - containerPort: 8000
         resources:
           requests:
             memory: "64Mi"
